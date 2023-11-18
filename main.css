@@ -10,7 +10,6 @@ body {
 .container {
     background: #222;
     width: 80vw;
-    height: 80vh;
     margin: 25px auto;
     padding: 20px;
     border-radius: 10px;
@@ -76,22 +75,14 @@ footer {
         max-width: 80vw;
     }
 }
-@media (max-width: 320px) {
-    .container {
-        display: grid;
+@media  (min-width: 980px) {
+    .container{
         grid-template-columns: 1fr;
+        gap: 50px;
     }
-    .img {
-        display: block;
-    }
-    .filters {
-        display: block;
+      
+    .img img,canvas {
+        max-width: 80vw;
     }
 }
-
-
-
-
-
-
 
